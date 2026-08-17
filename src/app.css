@@ -311,6 +311,45 @@ a {
   color: var(--accent);
 }
 
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.download-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.35rem;
+}
+
+.download-cta-note {
+  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  color: color-mix(in srgb, var(--ink) 55%, transparent);
+}
+
+.download-cta-override {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.75rem;
+  color: color-mix(in srgb, var(--ink) 55%, transparent);
+}
+
+.download-cta-override select {
+  min-width: 12rem;
+  height: 2rem;
+  border: 1px solid var(--mist);
+  border-radius: 4px;
+  background: var(--elevated);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.75rem;
+}
+
 .section {
   margin-top: 2.75rem;
 }

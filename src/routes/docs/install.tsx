@@ -17,19 +17,19 @@ export default function InstallDocs() {
           <code>*-store.msix</code> from Releases via Partner Center.
         </li>
         <li>
-          <strong>Portable / Inno</strong>: download the ZIP or setup EXE from{" "}
-          <A href="/download">Downloads</A>.
+          <strong>Portable / Inno</strong>:{" "}
+          <A href="/download">download the installer or ZIP for your platform</A>.
         </li>
       </ul>
       <h2>macOS</h2>
       <p>
-        <code>brew install --cask amdphreak/tap/instalay</code> or install the
-        DMG/ZIP from Releases.
+        <code>brew install --cask amdphreak/tap/instalay</code> or{" "}
+        <A href="/download">install the DMG for your Mac</A>.
       </p>
       <h2>Linux</h2>
       <p>
-        Extract the <code>.tar.gz</code> release bundle and run{" "}
-        <code>./instalay</code>.
+        Extract the <code>.tar.gz</code> for your CPU from{" "}
+        <A href="/download">Downloads</A> and run <code>./instalay</code>.
       </p>
       <h2>Mobile &amp; web</h2>
       <p>

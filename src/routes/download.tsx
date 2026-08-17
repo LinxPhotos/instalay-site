@@ -1,8 +1,7 @@
 import { Title } from "@solidjs/meta";
 import { A } from "@solidjs/router";
+import { DownloadCta } from "../components/DownloadCta";
 import { LINX } from "../lib/linx";
-
-const RELEASES = "https://github.com/LinxPhotos/InstaLay/releases/latest";
 
 export default function DownloadPage() {
   return (
@@ -10,11 +9,16 @@ export default function DownloadPage() {
       <Title>Download — InstaLay</Title>
       <h1>Download</h1>
       <p>
-        Grab the latest desktop packages from GitHub Releases (Windows ZIP/EXE/MSIX,
-        macOS DMG/ZIP, Linux tar.gz). InstaLay Free is the same app as InstaLay —
-        if you want to support the developer,{" "}
+        Desktop packages for Windows, macOS, and Linux. InstaLay Free is the same
+        app as InstaLay — if you want to support the developer,{" "}
         <A href="/docs/pricing">see pricing</A> (checkout on Linx Photos).
       </p>
+      <DownloadCta
+        owner="LinxPhotos"
+        repo="InstaLay"
+        label="Download InstaLay"
+        anchor="download"
+      />
       <p class="muted">
         Pair InstaLay with{" "}
         <a href={LINX.home} rel="noopener noreferrer">
@@ -23,21 +27,13 @@ export default function DownloadPage() {
         to pull album variants into tapestry projects and publish from your
         hosted library.
       </p>
-      <p>
-        <a class="btn btn-primary" href={RELEASES} rel="noopener noreferrer">
-          Open latest release
-        </a>
-      </p>
+      <h2>What you get</h2>
       <ul>
         <li>
-          Windows Store package: <code>*-windows-*-store.msix</code>
+          Windows installer: <code>*-windows-*-setup.exe</code> (portable ZIP and Store MSIX also ship)
         </li>
         <li>
-          Windows portable / setup: <code>*-windows-*.zip</code> /{" "}
-          <code>*-setup.exe</code>
-        </li>
-        <li>
-          macOS: <code>*-macos-*.dmg</code> or <code>.zip</code>
+          macOS: <code>*-macos-*.dmg</code>
         </li>
         <li>
           Linux: <code>*-linux-*.tar.gz</code>

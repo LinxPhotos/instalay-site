@@ -1,5 +1,6 @@
 import { Title } from "@solidjs/meta";
 import { A } from "@solidjs/router";
+import { DownloadCta } from "../components/DownloadCta";
 import { LINX } from "../lib/linx";
 import { EDITIONS } from "../lib/pricing";
 import { BuyButton } from "../components/BuyButton";
@@ -35,9 +36,7 @@ export default function Home() {
             Pricing
           </A>
           <BuyButton plan="lifetime" label="Buy on Linx Photos" />
-          <A class="btn btn-ghost" href="/download">
-            Download Free
-          </A>
+          <DownloadCta owner="LinxPhotos" repo="InstaLay" label="Download Free" />
           <A class="btn btn-ghost" href="/docs">
             Read the docs
           </A>
