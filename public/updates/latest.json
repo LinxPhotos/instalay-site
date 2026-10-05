@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "version": "0.8.0",
+  "channel": "stable",
+  "publishedAt": "2026-10-04T05:51:32Z",
+  "notes": "InstaLay v0.8.0",
+  "notesUrl": "https://github.com/LinxPhotos/instalay/releases/tag/v0.8.0",
+  "mandatory": false,
+  "platforms": {
+    "windows-x64": {
+      "url": "https://github.com/LinxPhotos/instalay/releases/download/v0.8.0/InstaLay-0.8.0-windows-x64-setup.exe",
+      "sha256": "aea884e410ed5c8240d9d91bc546f36f0f58397611f2aace828ba6fb4d0da697",
+      "signature": null,
+      "installerKind": "exe-setup",
+      "size": 15351429
+    },
+    "windows-arm64": {
+      "url": "https://github.com/LinxPhotos/instalay/releases/download/v0.8.0/InstaLay-0.8.0-windows-arm64-setup.exe",
+      "sha256": "d26a84fcc6f0bbde7590fa66ff006972614fb29cfdc576e6ccd07a3268984516",
+      "signature": null,
+      "installerKind": "exe-setup",
+      "size": 13498926
+    },
+    "macos-arm64": {
+      "url": "https://github.com/LinxPhotos/instalay/releases/download/v0.8.0/InstaLay-0.8.0-macos-arm64.zip",
+      "sha256": "be41474e18879fc3db53c997fc3465e39a05b4df5887be247b9fb1f66a1858af",
+      "signature": null,
+      "installerKind": "zip-app",
+      "size": 30360929
+    }
+  }
+}

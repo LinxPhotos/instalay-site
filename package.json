@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vinxi dev",
     "build": "vinxi build",
-    "postbuild": "node scripts/write-crawlability.mjs",
+    "postbuild": "node scripts/write-crawlability.mjs && node scripts/write-update-feed.mjs",
     "start": "vinxi start",
     "typecheck": "tsc --noEmit"
   },

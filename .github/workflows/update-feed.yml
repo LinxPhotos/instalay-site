@@ -1,0 +1,40 @@
+name: Refresh update feed
+
+on:
+  repository_dispatch:
+    types: [instalay-release]
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-feed
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Regenerate public/updates/latest.json
+        run: node scripts/write-update-feed.mjs --public
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- public/updates/latest.json; then
+            echo "Feed unchanged"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/updates/latest.json
+          git commit -m "Refresh InstaLay update feed from GitHub Releases."
+          git push
