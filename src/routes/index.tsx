@@ -27,7 +27,7 @@ export default function Home() {
         <p class="lede">
           Prepare your photos for Instagram on Desktop and Mobile, without
           awkward cropping. Our app uses a Canvas layer to allow positioning your photos
-          carefully on a background matte, the way an artist or professional photographer would.
+          carefully on a background mat, the way an artist or professional photographer would.
           Optionally change the matte texture and color, and add pixel borders.
           Get creative by converting your photos into a tapestry layout
           like SCRL carousels. Compatible with Windows, macOS, Linux, Android, iOS, and web.
@@ -50,7 +50,7 @@ export default function Home() {
         <div class="grid-3">
           <div class="tile">
             <h3>No-crop canvas</h3>
-            <p>4:5 and friends, letterboxed with photographic mattes and paper grain.</p>
+            <p>4:5 and friends, letterboxed with photographic mats and paper grain.</p>
           </div>
           <div class="tile">
             <h3>Tapestry mode</h3>
