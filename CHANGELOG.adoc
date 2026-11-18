@@ -1,0 +1,7 @@
+= Changelog
+
+== 2026-11-18
+
+=== Document the live site URL
+
+* The README names https://instalay.linx.photos/ as the site, including `/download`. The project path `linxphotos.github.io/InstaLay` is not this site.

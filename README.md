@@ -8,16 +8,14 @@ pnpm dev
 pnpm build
 ```
 
-**Site URL:** https://linxphotos.github.io/InstaLay/
+**Site URL:** https://instalay.linx.photos/
 
-Builds use `GITHUB_PAGES_BASE=/InstaLay/` so Vite assets and Solid Router share the same prefix as the GitHub repo name. Without the router `base`, the SPA hydrates blank on project Pages.
+GitHub Pages serves this site on the custom domain in `public/CNAME`. CI sets `GITHUB_PAGES_BASE=/`. The old project path `https://linxphotos.github.io/InstaLay/` is not this site — download and docs live at `https://instalay.linx.photos/download` and `https://instalay.linx.photos/docs`.
 
 Canonical pricing page: `/docs/pricing` (buy CTAs → `https://linx.photos/apps/instalay`). Legacy `/buy` redirects there (or straight to Linx when `?plan=` is set). Nav **Login** → `https://linx.photos/login?next=/account/instalay`.
 
 Nested routes must use a folder + `index.tsx` (e.g. `routes/buy/index.tsx` + `routes/buy/success.tsx`). A sibling `buy.tsx` becomes a layout and leaves `/buy` blank if there is no index.
 
-When `instalay.linx.photos` DNS is ready:
+## Changelog
 
-1. Cloudflare: `CNAME instalay → linxphotos.github.io`
-2. Set Pages custom domain in repo settings
-3. Rebuild with `GITHUB_PAGES_BASE=/` and add `public/CNAME`
+See [CHANGELOG.adoc](CHANGELOG.adoc).
